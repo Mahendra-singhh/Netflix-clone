@@ -13,8 +13,8 @@
  
 }
 .box{
-    width: 100%;
-    height: 100vw;
+    width: 100vw;
+    height: 100vh;
     opacity: 0.7;
     background-color: black;
     position: absolute;
@@ -34,26 +34,31 @@ nav{
     color: red;
 }
 .right >button{
-    width: 100px;
-    padding: 10px;
-    border-radius: 10px;
+    
+    
     
 }
 .eng{
+    width: 100px;
+    padding: 10px;
+    border-radius: 7px;
     color: white;
-   /* background-color: rgba(23, 23, 23,0.2);*/
+    background-color: rgba(23, 23, 23,0.2);
     background-color: rgba(187 171 171 / 8%);
 }
 .sign{
+    width: 100px;
+    padding: 10px;
+    border-radius: 7px;
     background-color: #E50914;
     color: white;
     padding: 10px;
     border-radius: 10px;
-    
+    transform: none;    
 }
 main  {
     
-    height: 100%;
+    min-height: 80%;
     color: white;
     display:flex;
     justify-content: center;
@@ -62,6 +67,8 @@ main  {
      position: relative;
     z-index: 10;
 }
+
+
 .left{
     position: relative;
     z-index: 10;
@@ -85,18 +92,12 @@ main  {
     font-weight: 500;
 }
 main div{
+    
     display: flex;
     gap: 5px;
 }
-main div input,
-main div button {
-    
-    height: 50px;            /* ✅ same height */
-    border-radius: 4px;
-    box-sizing: border-box; 
-    background-color: rgba(23, 23, 23,0.2) /* ✅ includes padding + border in height */
-}
 main div input{
+    
 padding: 5px 49px;
     color: rgb(251, 251, 251);
     border-radius: 4px;
@@ -104,11 +105,12 @@ padding: 5px 49px;
     background-color: rgba(23, 23, 23,0.7);
     padding-left: -50px;
     font-weight: 600;
-    border: 1px solid  rgba(236, 224, 224, 0.7);
+    border: 1px solid  rgba(24, 2, 2, 0.7);
     
     
 }
 .red-button{
+    
     
     padding: 5px 29px;
     color: white;
@@ -166,7 +168,7 @@ padding: 5px 49px;
     width: 15vw;
     color: white;
     font-weight: 400;
-    height: 250px;
+    height: px;
     border-radius: 8px;
     padding: 8px;
     
@@ -212,4 +214,99 @@ padding: 5px 49px;
     font-weight: 400;
     padding: 20px;
     height: 20px;
+}
+@media only screen and (max-width:550px){
+    
+     
+    main  {width:80vw;
+        margin: auto;
+        padding-top: 20%;
+        padding-bottom;
+
+    }
+    nav{
+        width: 90vw;
+    }
+    .third,
+main div input {
+    margin: 0;
+    padding: 0;
+}
+    main div{
+        display: flex;
+        flex-direction: column;
+        width:70vw;
+        align-items: center;
+        margin: auto;
+    }
+    main div input {
+        width: 65vw;
+        
+
+
+    }
+    .red-button{
+        
+        width: 50vw;
+        text-align: center;
+        font-size: 18px;
+
+    }
+    .first{
+        font-size: 30px;
+    }
+    .second{
+        font-size: 17px;
+        font-weight: 500;
+        align-content: center;
+    }
+    .third{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .left img{
+        width: 95px;
+
+    }
+    .eng{
+        width: 55px;
+
+    }
+    .sign{
+        width: 80px;
+
+    }
+    .main{
+        height: 55vh;
+    }
+    .trend{
+    
+    
+    position: relative;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.trend img{
+    width: 20vw;
+}
+    .reason{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }  
+    .log{
+width: 90vw;
+    }
+    .log div{
+        margin: 0;padding: 0;
+        font-size: 21px;
+    }
+    .question{
+        width: 95vw;
+    }
+    .headings span{
+        padding: top 50px;;
+    }
 }
